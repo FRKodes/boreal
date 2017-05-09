@@ -2,7 +2,8 @@
 <html lang="{{ config('app.locale') }}">
     <head>
         @include('partials.metas')
-        <link href="css/app.css" rel="stylesheet" type="text/css">
+        <link href="css/icons-font.css" rel="stylesheet" type="text/css">
+        <link href="css/app.css" rel="stylesheet" type="text/css">        
     </head>
     <body>
         <header>@include('partials.nav')</header>

@@ -1,17 +1,16 @@
 @charset "UTF-8"
 
 @font-face
-	font-family: "untitled-font-5"
-	src:url("fonts/untitled-font-5.eot")
-	src:url("fonts/untitled-font-5.eot?#iefix") format("embedded-opentype"),
-	url("fonts/untitled-font-5.woff") format("woff"),
-	url("fonts/untitled-font-5.ttf") format("truetype"),
-	url("fonts/untitled-font-5.svg#untitled-font-5") format("svg")
+	font-family: "icons-font"
+	src: url('/fonts/icons-font.eot')
+	src: local('/fonts/icons-font')
+	src: url('/fonts/icons-font.svg#icons-font') format('svg')
+	src: url('/fonts/icons-font.otf') format('opentype')
 	font-weight: normal
 	font-style: normal
 
 [data-icon]:before
-	font-family: "untitled-font-5" !important
+	font-family: "icons-font" !important
 	content: attr(data-icon)
 	font-style: normal !important
 	font-weight: normal !important
@@ -24,7 +23,7 @@
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before
-	font-family: "untitled-font-5" !important
+	font-family: "icons-font" !important
 	font-style: normal !important
 	font-weight: normal !important
 	font-variant: normal !important

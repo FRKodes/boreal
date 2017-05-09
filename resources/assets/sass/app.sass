@@ -1,18 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400');
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 $red-color: #f6323e
 $blanco: #fff
+$c7: #c7c7c7
+$gris: #4f4f4f
 
+.gris
+	color: $gris
 .bg-gray
 	background-color: #e7e7e7
 .border-none
 	border: none !important
+.m-top--25
+	margin-top: -25px
+.m-top--20
+	margin-top: -20px
+.m-top--10
+	margin-top: -10px
+.m-top-20
+	margin-top: 20px
+.m-bottom-20
+	margin-bottom: 20px
+.capitalize
+	text-transform: capitalize
+.overflow-hidden
+	overflow: hidden
 body
-	padding-top: 60px
+	padding-top: 50px
 	font-family: 'Oswald', sans-serif
 .navbar-default
 	background-color: $red-color
+	border: none
 	.navbar-toggle
 		border: none
 		&:hover
@@ -21,23 +40,206 @@ body
 			background-color: $blanco
 	.navbar-nav > li > a
 		color: $blanco
+.main-banner-container
+	background: purple url(/images/banner_home_header.jpg) no-repeat center top
+	background-size: cover
+	height: 480px
+	color: white
+	.item
+		padding-top: 175px
+	p
+		font-size: 2.4em
+		text-transform: uppercase
+		font-weight: 200
+		line-height: 1.2em
+		b
+			font-weight: 400
+		span
+			font-size: .6em
+.calculator
+	border: 1px solid $c7
+	margin-top: -132px
+	margin-bottom: 20px
+	background: rgba(white, .85)
+	text-align: center
+	padding: 10px 10px 0 10px
+	.cifras
+		color: $red-color
+		font-size: 2em
+	select
+		border: none
+		width: 45%
+		float: left
+		border-radius: 0
+	.input-pesos
+		width: 50%
+		border-radius: 0
+		float: right
+.submit
+	border-radius: 0
+	background-color: $red-color
+	border: 1px solid $red-color
+	text-transform: uppercase
+	font-weight: 200
+	letter-spacing: 1px
+.car-item
+	height: auto
+	margin-top: 10px
+	height: 200px
+	overflow: hidden
+	position: relative
+	img
+		width: 100%
+		height: auto
+		display: inline-block
+	.card
+		background: rgba(black, .8)
+		color: white
+		position: relative
+		margin-top: -100px
+		height: 100px
+		padding: 10px
+		.title
+			text-transform: uppercase
+			text-align: center
+			font-weight: 200
+			font-size: 1.3em
+.block-title
+	margin: 25px 0
+	font-size: 1.2em
+.fact-item
+	padding: 20px 0
+.map-home
+	height: 230px
+	background: $c7
+	width: 100%
+.news-item
+	padding: 10px 20px
+	text-align: center
+	.title
+		margin: 15px 0
+	.info
+		color: $gris
+		padding-bottom: 20px
 footer
 	background: $red-color
 	padding: 0 0 30px 0
 	.newsletter
 		margin-top: 30px
+		.title
+			font-size: 1.2em
 	a
 		color: $blanco
 	ul
 		padding: 10px 0
-		border-bottom: 1px solid white
+		border-bottom: 1px solid rgba(white, .5)
 		li
 			display: block
 			margin-bottom: 5px
+		&.social
+			text-align: center
+			li
+				display: inline-block
+				font-size: 2em
+				margin: 0 5px
+				a:hover
+					color: rgba(white, .8)
+					text-decoration: none
+					transition: color .5s ease
 	.info
 		text-align: center
 		color: white
-	.social
-		text-align: center
-		.li
-			display: inline-block !important
+@media screen and (min-width: 325px)
+	.car-item
+		.card
+			margin-top: -150px
+@media screen and (min-width: 425px)
+	.car-item
+		height: 240px
+		.card
+			margin-top: -150px
+@media screen and (min-width: 480px)
+	.car-item
+		height: 270px
+		.card
+			margin-top: -165px
+@media screen and (min-width: 540px)
+	.car-item
+		height: 310px
+		.card
+			margin-top: -170px
+@media screen and (min-width: 580px)
+	.car-item
+		height: 335px
+		.card
+			margin-top: -175px
+@media screen and (min-width: 768px)
+	body
+		padding-top: 0
+	.navbar-default
+		background-color: transparent
+	.main-banner-container
+		height: 820px
+		.item
+			padding-top: 350px
+		p
+			font-size: 4em
+			line-height: 1.2em
+			b
+				font-weight: 400
+			span
+				font-size: .6em
+	.block-title
+		font-size: 1.8em
+	.car-item
+		height: 245px
+		.card
+			margin-top: -100px
+	.map-home
+		height: 340px
+	footer
+		.info
+			text-align: left
+		ul
+			border-bottom: 0
+			&.social
+				text-align: left
+		.bottom-block
+			padding-top: 30px
+		.col-sm-4
+			height: 160px
+			border-right: 1px solid rgba(white, .5)
+
+@media screen and (min-width: 992px)
+	.main-banner-container
+		height: 690px
+		.item
+			padding-top: 250px
+		p
+			font-size: 5em
+			line-height: 1.1em
+			span
+				font-size: .5em
+	.car-item
+		height: 320px
+		.card
+			margin-top: -115px
+			.title
+				margin-bottom: 10px
+@media screen and (min-width: 1200px)
+	.car-item
+		height: 180px
+		&:hover
+			.card
+				margin-top: -200px
+				transition: margin-top .2s ease-out, height .1s ease
+			.title
+				margin-top: 30px
+				transition: margin-top .3s ease
+		.card
+			margin-top: -60px
+			height: 200px
+			transition: margin-top .2s ease-in
+			.title
+				margin-bottom: 20px
+				transition: margin-top .2s ease-in
