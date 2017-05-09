@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$red-color: #f6323e
+$blanco: #fff
+
+.bg-gray
+	background-color: #e7e7e7
+.border-none
+	border: none !important
+body
+	padding-top: 60px
+	font-family: 'Oswald', sans-serif
+.navbar-default
+	background-color: $red-color
+	.navbar-toggle
+		border: none
+		&:hover
+			background: none
+		.icon-bar
+			background-color: $blanco
+	.navbar-nav > li > a
+		color: $blanco
+footer
+	background: $red-color
+	padding: 0 0 30px 0
+	.newsletter
+		margin-top: 30px
+	a
+		color: $blanco
+	ul
+		padding: 10px 0
+		border-bottom: 1px solid white
+		li
+			display: block
+			margin-bottom: 5px
+	.info
+		text-align: center
+		color: white
+	.social
+		text-align: center
+		.li
+			display: inline-block !important
