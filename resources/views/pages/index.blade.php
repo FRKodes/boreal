@@ -78,8 +78,20 @@
 
 			<div class="facts-container">
 				<div class="fact-item text-center">
-					<span class="icon-"></span>
+					<span class="icon-ecologico"></span>
 					<div class="fact-title">ECOLÓGICO</div>
+					<div class="fact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+				</div>
+
+				<div class="fact-item text-center">
+					<span class="icon-economico"></span>
+					<div class="fact-title">ECONÓMICO</div>
+					<div class="fact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+				</div>
+
+				<div class="fact-item text-center">
+					<span class="icon-seguro"></span>
+					<div class="fact-title">SEGURO</div>
 					<div class="fact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 				</div>
 			</div>
@@ -101,18 +113,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="news-container">
-				<div class="news-item">
+				<div class="item news-item">
 					<div class="title">El Economista</div>
 					<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
 				</div>
 
-				<div class="news-item">
-					<div class="title">El Economista 2</div>
+				<div class="item news-item">
+					<div class="title">Milenio</div>
 					<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
 				</div>
 
-				<div class="news-item">
-					<div class="title">El Economista 3</div>
+				<div class="item news-item">
+					<div class="title">El Universal</div>
 					<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
 				</div>
 			</div>

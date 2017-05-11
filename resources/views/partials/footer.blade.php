@@ -16,7 +16,7 @@
 	<div class="col-sm-4">
 		<ul class="menu-quienes">
 			<li><a href="{{ url('quienes-somos') }}">Quienes Somos</a></li>
-			<li><a href="{{ url('que-es-gnv') }}">¿Qué es GNV</a></li>
+			<li><a href="{{ url('que-es-gnv') }}">¿Qué es GNV?</a></li>
 			<li><a href="{{ url('preguntas-frecuentes') }}">Preguntas Frecuentes</a></li>
 		</ul>
 	</div>

@@ -5,9 +5,16 @@ $red-color: #f6323e
 $blanco: #fff
 $c7: #c7c7c7
 $gris: #4f4f4f
-
+$marron: #8c0011
+$magna: #01a01e
+$gas: #e4de00
+$turquesa: #78ffe1
 .gris
 	color: $gris
+.white
+	color: white
+.red
+	color: $red-color
 .bg-gray
 	background-color: #e7e7e7
 .border-none
@@ -22,6 +29,8 @@ $gris: #4f4f4f
 	margin-top: 20px
 .m-bottom-20
 	margin-bottom: 20px
+a.submit
+	padding: 5px 20px
 .capitalize
 	text-transform: capitalize
 .overflow-hidden
@@ -40,11 +49,39 @@ body
 			background-color: $blanco
 	.navbar-nav > li > a
 		color: $blanco
+		transition: color .3s ease-out
+	.navbar-nav > .active > a
+		background-color: rgba(white, .8)
+		&:hover
+			color: rgba(white, .7)
+			transition: .3s ease-in
+	.navbar-nav > li > a:hover
+		color: rgba(white, .6)
+		transition: color .3s ease-in
 .main-banner-container
-	background: purple url(/images/banner_home_header.jpg) no-repeat center top
+	background: transparent url(/images/banner_home_header.jpg) no-repeat center top
 	background-size: cover
 	height: 480px
 	color: white
+	&.economico
+		background: transparent url(/images/banner_economicas_992.jpg) no-repeat center top
+		background-size: cover
+	&.ecologico
+		background: transparent url(/images/banner_ecologicos_992.jpg) no-repeat center top
+		background-size: cover
+		.item
+			padding-top: 330px
+	&.seguridad
+		background: transparent url(/images/banner_seguridad_992.jpg) no-repeat center top
+		background-size: cover
+	&.gnv
+		background: transparent url(/images/banner_gnv_992.jpg) no-repeat center top
+		background-size: cover
+	&.contacto
+		background: transparent url(/images/banner_home_header.jpg) no-repeat center top
+		background-size: cover
+		.item
+			padding-top: 375px
 	.item
 		padding-top: 175px
 	p
@@ -82,6 +119,19 @@ body
 	text-transform: uppercase
 	font-weight: 200
 	letter-spacing: 1px
+	&:active
+		background-color: rgba($red-color, .9)
+		border-color:  rgba($red-color, .9)
+		transition: background-color .5s ease
+	&:focus
+		background-color: rgba($red-color, .8)
+		border-color:  rgba($red-color, .8)
+		transition: background-color .5s ease
+		outline: none
+	&:hover
+		background-color: rgba($red-color, .7)
+		border-color:  rgba($red-color, .7)
+		transition: background-color .5s ease
 .car-item
 	height: auto
 	margin-top: 10px
@@ -107,20 +157,147 @@ body
 .block-title
 	margin: 25px 0
 	font-size: 1.2em
+.facts-container
+	overflow: hidden
+	position: relative
+	width: 100%
+	height: auto
 .fact-item
 	padding: 20px 0
+	display: inline-block
+	.fact-title
+		margin: 5px 0
+		font-size: 1.4em
+		font-weight: 200
+	span
+		&::before
+			font-size: 8em
 .map-home
 	height: 230px
 	background: $c7
 	width: 100%
+.news-container
+	overflow: hidden
+.slick-dots
+	padding: 10px 0
+	text-align: center
+	li
+		display: inline-block
+		width: 14px
+		height: 14px
+		overflow: hidden
+		background-color: $c7
+		border-radius: 50%
+		margin: 0 5px
+		transition: background-color .6s ease-out
+		&.slick-active
+			background-color: $red-color
+			transition: background-color .6s ease-in
+		button
+			color: transparent
 .news-item
 	padding: 10px 20px
 	text-align: center
+	display: inline-block
 	.title
 		margin: 15px 0
+		font-size: 1.4em
 	.info
 		color: $gris
 		padding-bottom: 20px
+/*ECONOMICO*/
+.top-icon-line
+	margin: -60px auto 0 auto
+	width: 120px
+	height: 120px
+	border-radius: 50%
+	overflow: hidden
+	background-color: white
+	span
+		font-size: 5.8em
+		color: $red-color
+.fuel-container
+	margin-top: 30px
+	margin-bottom: 30px
+.fuel-item
+	margin-bottom: 10px
+	display: flex
+	.title
+		font-size: 1.4em
+		font-weight: 200
+		width: 25%
+	.chart
+		width: 75%
+		overflow: hidden
+		display: flex
+		align-items: center
+		position: relative
+		z-index: 1
+		.line
+			height: 2px
+			background-color: rgba($red-color, .7)
+			width: 36%
+			&.premium
+				background-color: rgba($marron, .7)
+				width: 85%
+			&.magna
+				background-color: rgba($magna, .7)
+				width: 80%
+			&.gas-lp
+				background-color: rgba($gas, .7)
+				width: 50%
+		.dot
+			border: 2px solid $red-color
+			border-radius: 50%
+			width: 10px
+			height: 10px
+			background-color: transparent
+			&.premium
+				border-color: rgba($marron, .7)
+			&.magna
+				border-color: rgba($magna, .7)
+			&.gas-lp
+				border-color: rgba($gas, .7)
+.lines
+	margin-top: -150px
+	position: relative
+	z-index: -1
+	.line
+		height: 150px
+		width: 2px
+		background-color: $turquesa
+		display: inline-block
+		&._0
+			margin-left: 27%
+		&._10
+			margin-left: 31%
+		&._20
+			margin-left: 33%
+.prices
+	font-weight: 200
+	font-size: 1.1em
+	._0
+		margin-left: 25%
+	._10
+		margin-left: 25%
+	._20
+		margin-left: 25%
+.inner-banner
+	height: 180px
+	display: block
+	background: transparent url(/images/banner_economicas_inner_992.jpg) no-repeat center center
+	background-size: cover
+	&.ecologico
+		background: transparent url(/images/banner_ecologicos_inf_992.jpg) no-repeat center center
+		background-size: cover
+	&.seguridad
+		background: transparent url(/images/banner_seguridad_inf_992.jpg) no-repeat center center
+		background-size: cover
+/*CONTACTO*/
+textarea
+	resize: none
+.form-control
+	border-radius: 0
 footer
 	background: $red-color
 	padding: 0 0 30px 0
@@ -158,6 +335,11 @@ footer
 		height: 240px
 		.card
 			margin-top: -150px
+	.prices
+		._10
+			margin-left: 27%
+		._20
+			margin-left: 29%
 @media screen and (min-width: 480px)
 	.car-item
 		height: 270px
@@ -168,6 +350,11 @@ footer
 		height: 310px
 		.card
 			margin-top: -170px
+	.prices
+		._10
+			margin-left: 29%
+		._20
+			margin-left: 31%
 @media screen and (min-width: 580px)
 	.car-item
 		height: 335px
@@ -178,6 +365,24 @@ footer
 		padding-top: 0
 	.navbar-default
 		background-color: transparent
+		transition: background .5s ease-out
+		&.transparent
+			background: $red-color
+			transition: background .5s ease-in
+			.navbar-nav > .active > a
+				color: black
+				transition: color .5s ease-in
+		.navbar-nav > .active > a
+			color: white
+			background: none
+			&:hover
+				background: none
+			&:before
+				content: '_____'
+				color: $red-color
+				position: absolute
+				left: 30%
+				bottom: 5px
 	.main-banner-container
 		height: 820px
 		.item
@@ -195,8 +400,62 @@ footer
 		height: 245px
 		.card
 			margin-top: -100px
+	.news-container
+		margin-top: 20px
+		margin-bottom: 20px
 	.map-home
 		height: 340px
+	/*ECONOMICOS*/
+	.top-icon-line
+		margin: -100px auto 0 auto
+		width: 200px
+		height: 200px
+		.icon-economico
+			font-size: 10em
+	.fuel-item
+		margin-bottom: 20px
+		.title
+			font-size: 1.5em
+			width: 15%
+		.chart
+			width: 85%
+			.line
+				width: 30%
+				&.premium
+					background-color: rgba($marron, .7)
+					width: 85%
+				&.magna
+					background-color: rgba($magna, .7)
+					width: 80%
+				&.gas-lp
+					background-color: rgba($gas, .7)
+					width: 45%
+			.dot
+				border: 4px solid $red-color
+				width: 14px
+				height: 14px
+	.lines
+		margin-top: -200px
+		.line
+			height: 200px
+			&._0
+				margin-left: 17%
+			&._10
+				margin-left: 32%
+			&._20
+				margin-left: 42%
+	.prices
+		._0
+			margin-left: 16%
+		._10
+			margin-left: 29%
+		._20
+			margin-left: 40%
+	.inner-banner
+		height: 440px
+	/*CONTACTO*/
+	textarea.form-control
+		height: 132px
 	footer
 		.info
 			text-align: left
@@ -226,7 +485,11 @@ footer
 			margin-top: -115px
 			.title
 				margin-bottom: 10px
+	.map-home
+		height: 440px
 @media screen and (min-width: 1200px)
+	.main-banner-container
+		height: 800px
 	.car-item
 		height: 180px
 		&:hover
@@ -243,3 +506,13 @@ footer
 			.title
 				margin-bottom: 20px
 				transition: margin-top .2s ease-in
+@media screen and (min-width: 1600px)
+	.main-banner-container
+		background: transparent url(/images/banner_home_header.jpg) no-repeat center center
+		background-size: cover
+		&.economico
+			background: transparent url(/images/banner_economicas_992.jpg) no-repeat center center
+			background-size: cover
+		&.ecologico
+			background: transparent url(/images/banner_ecologicos_992.jpg) no-repeat center center
+			background-size: cover
