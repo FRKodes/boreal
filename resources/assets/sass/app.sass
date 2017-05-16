@@ -5,6 +5,7 @@ $red-color: #f6323e
 $blanco: #fff
 $c7: #c7c7c7
 $gris: #4f4f4f
+$gris2: #464646
 $marron: #8c0011
 $magna: #01a01e
 $gas: #e4de00
@@ -35,6 +36,13 @@ a.submit
 	text-transform: capitalize
 .overflow-hidden
 	overflow: hidden
+.inactive
+	.line
+		width: 0 !important
+		transition: width .5s ease-out
+	.price
+		opacity: 0 !important
+		transition: opacity 1.5s ease
 body
 	padding-top: 50px
 	font-family: 'Oswald', sans-serif
@@ -220,12 +228,14 @@ body
 	margin-top: 30px
 	margin-bottom: 30px
 .fuel-item
-	margin-bottom: 10px
 	display: flex
 	.title
 		font-size: 1.4em
 		font-weight: 200
 		width: 25%
+		height: 54px
+		display: flex
+		align-items: center
 	.chart
 		width: 75%
 		overflow: hidden
@@ -233,16 +243,18 @@ body
 		align-items: center
 		position: relative
 		z-index: 1
+		height: 54px
 		.line
 			height: 2px
 			background-color: rgba($red-color, .7)
 			width: 36%
+			transition: width 1s ease
 			&.premium
 				background-color: rgba($marron, .7)
-				width: 85%
+				width: 90%
 			&.magna
 				background-color: rgba($magna, .7)
-				width: 80%
+				width: 73%
 			&.gas-lp
 				background-color: rgba($gas, .7)
 				width: 50%
@@ -258,12 +270,23 @@ body
 				border-color: rgba($magna, .7)
 			&.gas-lp
 				border-color: rgba($gas, .7)
+		.price
+			border: 1px solid rgba($gris, .9)
+			color: $gris2
+			padding: 2px
+			border-radius: 2px
+			font-size: .8em
+			position: relative
+			bottom: 17px
+			left: -20px
+			opacity: 1
+			transition: opacity 2s ease
 .lines
-	margin-top: -150px
+	margin-top: -200px
 	position: relative
 	z-index: -1
 	.line
-		height: 150px
+		height: 200px
 		width: 2px
 		background-color: $turquesa
 		display: inline-block
@@ -413,12 +436,13 @@ footer
 		.icon-economico
 			font-size: 10em
 	.fuel-item
-		margin-bottom: 20px
 		.title
 			font-size: 1.5em
 			width: 15%
+			height: 60px
 		.chart
 			width: 85%
+			height: 60px
 			.line
 				width: 30%
 				&.premium
@@ -426,18 +450,20 @@ footer
 					width: 85%
 				&.magna
 					background-color: rgba($magna, .7)
-					width: 80%
+					width: 70%
 				&.gas-lp
 					background-color: rgba($gas, .7)
-					width: 45%
+					width: 53%
 			.dot
 				border: 4px solid $red-color
 				width: 14px
 				height: 14px
+			.price
+				bottom: 19px
 	.lines
-		margin-top: -200px
+		margin-top: -220px
 		.line
-			height: 200px
+			height: 220px
 			&._0
 				margin-left: 17%
 			&._10

@@ -23,35 +23,35 @@
 
 		<div class="fuel-container">
 			<div class="fuel-item gnv">
-				<div class="title">GNV</div>
-				<div class="chart">
+				<div class="title"><span>GNV</span></div>
+				<div class="chart inactive">
 					<div class="line"></div>
 					<div class="dot"></div>
-					<div class="price"></div>
+					<div class="price">$7.60</div>
 				</div>
 			</div>
 			<div class="fuel-item premium">
 				<div class="title">PREMIUM</div>
-				<div class="chart">
+				<div class="chart inactive">
 					<div class="line premium"></div>
 					<div class="dot premium"></div>
-					<div class="price"></div>
+					<div class="price">$18.22</div>
 				</div>
 			</div>
 			<div class="fuel-item magna">
 				<div class="title">MAGNA</div>
-				<div class="chart">
+				<div class="chart inactive">
 					<div class="line magna"></div>
 					<div class="dot magna"></div>
-					<div class="price"></div>
+					<div class="price">$16.36</div>
 				</div>
 			</div>
 			<div class="fuel-item gas-lp">
 				<div class="title">GAS LP</div>
-				<div class="chart">
+				<div class="chart inactive">
 					<div class="line gas-lp"></div>
 					<div class="dot gas-lp"></div>
-					<div class="price"></div>
+					<div class="price">$13.10</div>
 				</div>
 			</div>
 			

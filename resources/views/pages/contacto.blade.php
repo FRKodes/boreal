@@ -65,3 +65,106 @@
 		</div>
 	</div>
 @stop
+
+@section('custom_scripts')
+	<script>
+		  function initMap() {
+		    var san_pedrito = {lat: 20.619625, lng: -103.288494};
+		    var map = new google.maps.Map(document.getElementById('map-home'), {
+		      zoom: 14,
+		      center: san_pedrito,
+		      scrollwheel: false,
+		      styles: [
+		              {elementType: 'geometry', stylers: [{color: '#323232'}]},
+		              {elementType: 'labels.text.stroke', stylers: [{color: '#323232'}]},
+		              {elementType: 'labels.text.fill', stylers: [{color: '#f7323f'}]},
+		              {
+		                featureType: 'administrative.locality',
+		                elementType: 'labels.text.fill',
+		                stylers: [{color: '#8b4040'}]
+		              },
+		              {
+		                featureType: 'poi',
+		                elementType: 'labels.text.fill',
+		                stylers: [{color: '#8b4040'}]
+		              },
+		              {
+		                featureType: 'poi.park',
+		                elementType: 'geometry',
+		                stylers: [{color: '#263c3f'}]
+		              },
+		              {
+		                featureType: 'poi.park',
+		                elementType: 'labels.text.fill',
+		                stylers: [{color: '#6b9a76'}]
+		              },
+		              {
+		                featureType: 'road',
+		                elementType: 'geometry',
+		                stylers: [{color: '#282828'}]
+		              },
+		              {
+		                featureType: 'road',
+		                elementType: 'geometry.stroke',
+		                stylers: [{color: '#212a37'}]
+		              },
+		              {
+		                featureType: 'road',
+		                elementType: 'labels.text.fill',
+		                stylers: [{color: '#9ca5b3'}]
+		              },
+		              {
+		                featureType: 'road.highway',
+		                elementType: 'geometry',
+		                stylers: [{color: '#f7323f'}]
+		              },
+		              {
+		                featureType: 'road.highway',
+		                elementType: 'geometry.stroke',
+		                stylers: [{color: '#1f2835'}]
+		              },
+		              {
+		                featureType: 'road.highway',
+		                elementType: 'labels.text.fill',
+		                stylers: [{color: '#f3d19c'}]
+		              },
+		              {
+		                featureType: 'transit',
+		                elementType: 'geometry',
+		                stylers: [{color: '#2f3948'}]
+		              },
+		              {
+		                featureType: 'transit.station',
+		                elementType: 'labels.text.fill',
+		                stylers: [{color: '#8b4040'}]
+		              },
+		              {
+		                featureType: 'water',
+		                elementType: 'geometry',
+		                stylers: [{color: '#17263c'}]
+		              },
+		              {
+		                featureType: 'water',
+		                elementType: 'labels.text.fill',
+		                stylers: [{color: '#515c6d'}]
+		              },
+		              {
+		                featureType: 'water',
+		                elementType: 'labels.text.stroke',
+		                stylers: [{color: '#17263c'}]
+		              }
+		            ]
+		    });
+
+		    var marker_san_pedrito = new google.maps.Marker({
+		      position: san_pedrito,
+		      map: map,
+		      animation: google.maps.Animation.DROP,
+		      title: 'San Pedrito'
+		    });
+		  }
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD77lo6QWgOpoJlBYY8lqWIBjSe9eoO1S0&callback=initMap">
+		</script>
+@stop

@@ -18,3 +18,4 @@ Route::get('seguridad', 'PagesController@seguridad');
 Route::get('inversion', 'PagesController@inversion');
 Route::get('contacto', 'PagesController@contacto');
 Route::get('que-es-gnv', 'PagesController@gnv');
+Route::get('preguntas-frecuentes', 'PagesController@faq');

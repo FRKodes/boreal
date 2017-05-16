@@ -40,4 +40,9 @@ class PagesController extends Controller
     {
         return View('pages.gnv');
     }
+
+    public function faq()
+    {
+        return View('pages.faq');
+    }
 }

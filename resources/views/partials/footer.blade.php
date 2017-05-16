@@ -25,7 +25,7 @@
 			<li><a href="{{ url('beneficios-economicos') }}">Beneficios Económicos</a></li>
 			<li><a href="{{ url('beneficios-ecologicos') }}">Beneficios Ecológicos</a></li>
 			<li><a href="{{ url('seguridad') }}">Seguridad</a></li>
-			<li><a href="{{ url('inversion') }}">Inversion</a></li>
+			{{-- <li><a href="{{ url('inversion') }}">Inversion</a></li> --}}
 			<li><a href="{{ url('contacto') }}">Contacto</a></li>
 		</ul>
 	</div>
