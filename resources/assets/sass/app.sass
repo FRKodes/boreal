@@ -317,10 +317,62 @@ body
 		background: transparent url(/images/banner_seguridad_inf_992.jpg) no-repeat center center
 		background-size: cover
 /*CONTACTO*/
+#contactForm
+	position: relative
 textarea
 	resize: none
 .form-control
 	border-radius: 0
+.sent_mail_alert
+	background: $red-color
+	color: white
+	padding: 30px
+	position: absolute
+	display: none
+	bottom: 100px
+	text-align: center
+	.thanks
+		font-size: 1.4em
+#mc_embed_signup
+	form
+		padding: 0
+		text-align: center
+	.mc-field-group
+		width: 100%
+		input
+			border-radius: 0
+			border: 1px solid #ccc
+			padding: 0
+	#mc-embedded-subscribe-form
+		div.mce_inline_error
+			padding: 0
+			margin: 0
+			background: none
+			border: none
+	div.response
+		margin-bottom: 10px
+		padding: 0
+		width: 100%
+#mc-embedded-subscribe
+	margin: 0 0 20px 0
+	display: inline-block
+	border: none !important
+	border-radius: 0 !important
+.form-group.error
+	.form-control
+		border-color: $red-color
+#quotationForm
+	position: relative
+.sent_email_quotation
+	background: $red-color
+	color: white
+	font-size: 1.2em
+	padding: 30px
+	text-align: center
+	position: absolute
+	bottom: 100px
+	width: 100%
+	display: none
 footer
 	background: $red-color
 	padding: 0 0 30px 0
@@ -482,6 +534,9 @@ footer
 	/*CONTACTO*/
 	textarea.form-control
 		height: 132px
+	.sent_mail_alert
+		bottom: initial
+		padding: 30px 50px
 	footer
 		.info
 			text-align: left
@@ -494,7 +549,9 @@ footer
 		.col-sm-4
 			height: 160px
 			border-right: 1px solid rgba(white, .5)
-
+	.sent_email_quotation
+		padding: 50px 100px
+		bottom: 100px
 @media screen and (min-width: 992px)
 	.main-banner-container
 		height: 690px
@@ -532,6 +589,10 @@ footer
 			.title
 				margin-bottom: 20px
 				transition: margin-top .2s ease-in
+	.news-item
+		.info
+			padding-left: 40px
+			padding-right: 40px
 @media screen and (min-width: 1600px)
 	.main-banner-container
 		background: transparent url(/images/banner_home_header.jpg) no-repeat center center

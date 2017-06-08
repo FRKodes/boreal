@@ -80,19 +80,19 @@
 				<div class="fact-item text-center">
 					<span class="icon-ecologico"></span>
 					<div class="fact-title">ECOLÓGICO</div>
-					<div class="fact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+					<div class="fact-description">Reduce hasta el 30% de emisiones de CO2 y hasta un 90% de CO.</div>
 				</div>
 
 				<div class="fact-item text-center">
 					<span class="icon-economico"></span>
 					<div class="fact-title">ECONÓMICO</div>
-					<div class="fact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+					<div class="fact-description">Ahorra hasta un 50% respecto a otros combustibles.</div>
 				</div>
 
 				<div class="fact-item text-center">
 					<span class="icon-seguro"></span>
 					<div class="fact-title">SEGURO</div>
-					<div class="fact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+					<div class="fact-description">El sistema está regulado por NOMs con revisiones anuales.</div>
 				</div>
 			</div>
 
@@ -114,18 +114,21 @@
 		<div class="row">
 			<div class="news-container">
 				<div class="item news-item">
-					<div class="title">El Economista</div>
-					<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+					<div class="title">El Informador</div>
+					<div class="info">La conversión permite reducir hasta 47% el gasto en combustible al año.</div>
+					<div class="link"><a target="_blank" href="http://www.informador.com.mx/economia/2017/708681/6/te-conviene-convertir-tu-auto-al-gas-natural.htm" class="btn btn-primary submit">VER NOTA COMPLETA</a></div>
 				</div>
 
 				<div class="item news-item">
-					<div class="title">Milenio</div>
-					<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+					<div class="title">Pasajero 7</div>
+					<div class="info">Abren apoyos para adquirir unidades a gas natural en Jalisco.</div>
+					<div class="link"><a target="_blank" href="http://www.pasajero7.com/abren-apoyos-adquirir-unidades-a-gas-natural-en-jalisco/" class="btn btn-primary submit">VER NOTA COMPLETA</a></div>
 				</div>
 
 				<div class="item news-item">
-					<div class="title">El Universal</div>
-					<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+					<div class="title">1070 Noticias</div>
+					<div class="info">Vehículos oficiales de gobierno de Jalisco migrarán a gas natural.</div>
+					<div class="link"><a target="_blank" href="http://www.1070noticias.com.mx/jalisco/vehiculos-oficiales-de-gobierno-de-jalisco-migraran-a-gas-natural/" class="btn btn-primary submit">VER NOTA COMPLETA</a></div>
 				</div>
 			</div>
 		</div>
@@ -204,14 +207,7 @@
 		  function initMap() {
 		    var centro_gdl = {lat: 20.674968, lng: -103.354637};
 		    var san_pedrito = {lat: 20.619625, lng: -103.288494};
-		    var rio_nilo = {lat: 20.645308, lng: -103.297765};
-		    var pin2 = {lat: 20.691277, lng: -103.347506};
-		    var pin3 = {lat: 20.650449, lng: -103.401519};
-		    var pin4 = {lat: 20.589614, lng: -103.389923};
-		    var pin5 = {lat: 20.594470, lng: -103.339877};
-		    var pin6 = {lat: 20.631886, lng: -103.410979};
-		    var pin7 = {lat: 20.700412, lng: -103.426848};
-		    var pin8 = {lat: 20.693933, lng: -103.279361};
+		    var el_salto = {lat: 20.492248, lng: -103.222741};
 
 		    var map = new google.maps.Map(document.getElementById('map-home'), {
 		      zoom: 10,
@@ -306,60 +302,11 @@
 		      title: 'San Pedrito'
 		    });
 
-		    var marker_rio_nilo = new google.maps.Marker({
-		      position: rio_nilo,
+		    var marker_el_salto = new google.maps.Marker({
+		      position: el_salto,
 		      map: map,
 		      animation: google.maps.Animation.DROP,
-		      title: 'Rio Nilo'
-		    });
-		    var marker_pin2 = new google.maps.Marker({
-		      position: pin2,
-		      map: map,
-		      animation: google.maps.Animation.DROP,
-		      title: 'pin2'
-		    });
-		    
-		    var marker_pin3 = new google.maps.Marker({
-		      position: pin3,
-		      map: map,
-		      animation: google.maps.Animation.DROP,
-		      title: 'pin3'
-		    });
-		    var marker_pin4 = new google.maps.Marker({
-		      position: pin4,
-		      map: map,
-		      animation: google.maps.Animation.DROP,
-		      title: 'pin4'
-		    });
-		    var marker_pin5 = new google.maps.Marker({
-		      position: pin5,
-		      map: map,
-		      animation: google.maps.Animation.DROP,
-		      title: 'pin5'
-		    });
-		    var marker_pin6 = new google.maps.Marker({
-		      position: pin6,
-		      map: map,
-		      animation: google.maps.Animation.DROP,
-		      title: 'pin6'
-		    });
-		    var marker_pin7 = new google.maps.Marker({
-		      position: pin7,
-		      map: map,
-		      animation: google.maps.Animation.DROP,
-		      title: 'pin7'
-		    });
-		    var marker_pin8 = new google.maps.Marker({
-		      position: pin8,
-		      map: map,
-		      animation: google.maps.Animation.DROP,
-		      title: 'pin8'
-		    });
-		    var marker_pin9 = new google.maps.Marker({
-		      position: pin9,
-		      map: map,
-		      animation: google.maps.Animation.DROP,
-		      title: 'pin9'
+		      title: 'El salto'
 		    });
 		  }
 		</script>

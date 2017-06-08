@@ -78,9 +78,8 @@
 				<p>• No daña el motor.</p>
 				<p>• Disminuye la periodicidad de cambios de aceite y refacciones.</p>
 			</div>
-			<p class="text-center m-bottom-20">
-				<a href="#" class="white btn-btn-primary submit">¡COTIZA TU CONVERSIÓN YA!</a>
-			</p>
+			
+			@include('partials.modal-form-quotation')
 
 		</div>
 	</div>

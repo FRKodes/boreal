@@ -21,28 +21,24 @@
 		
 		<div class="row m-top-20">
 			
-			{{ Form::open(['id'=>'contactform']) }}
+			{{ Form::open(['url'=>'sendmail', 'id'=>'contactForm']) }}
 				
 				<div class="col-sm-6 col-md-4 col-md-offset-2">
 					<div class="form-group{{ $errors->has('nombre') ? ' has-error' : '' }}">
-					    {!! Form::text('nombre', null, ['class' => 'form-control', 'required' => 'required', 'placeholder'=>'*Nombre']) !!}
-					    <small class="text-danger">{{ $errors->first('nombre') }}</small>
+					    {!! Form::text('nombre', null, ['class' => 'form-control', 'data-validate' => 'required', 'placeholder'=>'*Nombre']) !!}
 					</div>
 					
 					<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-					    {!! Form::text('email', null, ['class' => 'form-control', 'required' => 'required', 'placeholder'=>'*Correo Electrónico']) !!}
-					    <small class="text-danger">{{ $errors->first('email') }}</small>
+					    {!! Form::text('email', null, ['class' => 'form-control', 'data-validate' => 'required|email', 'placeholder'=>'*Correo Electrónico']) !!}
 					</div>
 
 					<div class="form-group{{ $errors->has('tel') ? ' has-error' : '' }}">
 					    {!! Form::text('tel', null, ['class' => 'form-control', 'placeholder'=>'Teléfono']) !!}
-					    <small class="text-danger">{{ $errors->first('tel') }}</small>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="form-group{{ $errors->has('comentario') ? ' has-error' : '' }}">
-					    {!! Form::textarea('comentario', null, ['class' => 'form-control', 'required' => 'required', 'placeholder'=>'*Comentario']) !!}
-					    <small class="text-danger">{{ $errors->first('comentario') }}</small>
+					    {!! Form::textarea('comentario', null, ['class' => 'form-control', 'data-validate' => 'required', 'placeholder'=>'*Comentario']) !!}
 					</div>
 				</div>
 				
@@ -50,6 +46,11 @@
 					<div class="form-group overflow-hidden">
 					    {!! Form::submit('ENVIAR', ['class' => 'btn btn-primary submit pull-right']) !!}
 					</div>
+				</div>
+
+				<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 sent_mail_alert">
+					<p class="thanks">¡Gracias!</p>
+					<p>Tu mensaje se envió correctamente, nos pondremos en contacto contigo a la brevedad.</p>
 				</div>
 			{{ Form::close() }}
 		</div>

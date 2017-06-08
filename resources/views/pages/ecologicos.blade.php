@@ -37,9 +37,7 @@
 				<p>• Nivel de ruido mucho menor</p>
 			</div>
 			
-			<p class="text-center m-bottom-20">
-				<a href="#" class="white btn-btn-primary submit">¡COTIZA TU CONVERSIÓN YA!</a>
-			</p>
+			@include('partials.modal-form-quotation')
 
 		</div>
 	</div>
