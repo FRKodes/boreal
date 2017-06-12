@@ -32,6 +32,11 @@ class PagesController extends Controller
 		return View('pages.inversion');
 	}
 
+	public function quienes_somos()
+	{
+		return View('pages.quienes-somos');
+	}
+
 	public function contacto()
 	{
 		return View('pages.contacto');
