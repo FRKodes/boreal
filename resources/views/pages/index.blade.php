@@ -84,7 +84,7 @@
 				</div>
 
 				<div class="fact-item text-center">
-					<span class="icon-economico"></span>
+					<span class="icon-bill"></span>
 					<div class="fact-title">ECONÓMICO</div>
 					<div class="fact-description">Ahorra hasta un 50% respecto a otros combustibles.</div>
 				</div>

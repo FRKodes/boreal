@@ -43,11 +43,11 @@
 	</div>
 	<div class="col-sm-4 info border-none">
 		<p>Carretera a los Altos 1436-D, Col. San Pedrito Tlaquepaque, Jalisco. C.P. 45620</p>
-		<p>LLÁMANOS 3600 3420</p>
+		<p>LLÁMANOS <a class="white" href="tel:3600 3420">3600 3420</a></p>
 		<ul class="social border-none">
-			<li><a href="#" class="icon-twitter"></a></li>
-			<li><a href="#" class="icon-instagram"></a></li>
-			<li><a href="#" class="icon-linkedin"></a></li>
+			<li><a target="_blank" href="https://www.facebook.com/borealgas/" class="icon-facebook"></a></li>
+			<li><a target="_blank" href="https://twitter.com/borealgas" class="icon-twitter"></a></li>
+			<li><a target="_blank" href="https://www.instagram.com/borealgas/" class="icon-instagram"></a></li>
 		</ul>
 	</div>
 </div>

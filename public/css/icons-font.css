@@ -38,21 +38,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-ecologico:before {
+.icon-bill:before {
   content: "\61";
 }
-.icon-economico:before {
+.icon-ecologico:before {
   content: "\62";
 }
-.icon-instagram:before {
+.icon-facebook:before {
   content: "\63";
 }
-.icon-linkedin:before {
+.icon-instagram:before {
   content: "\64";
 }
-.icon-seguro:before {
+.icon-linkedin:before {
   content: "\65";
 }
-.icon-twitter:before {
+.icon-seguro:before {
   content: "\66";
+}
+.icon-twitter:before {
+  content: "\67";
 }
