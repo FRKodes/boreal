@@ -35,16 +35,15 @@
 
 			<div class="col-xs-12 text-center m-bottom-20">
 				<p class="block-title text-center">NUESTRAS CERTIFICACIONES</p>
-				<div class="cert"><a href="#">LOREM IPSUM DOLOR SIT AMET</a></div>
-				<div class="cert"><a href="#">LOREM IPSUM DOLOR SIT AMET</a></div>
-				<div class="cert"><a href="#">LOREM IPSUM DOLOR SIT AMET</a></div>
-				<div class="cert"><a href="#">LOREM IPSUM DOLOR SIT AMET</a></div>
-				<div class="cert m-bottom-20"><a href="#">LOREM IPSUM DOLOR SIT AMET</a></div>
+				<div class="cert"><a href="pdf/aut_cdmx_gnc_f350_f450_f550_ram4000_ch3500.pdf" target="_blank" title="Ver certificación">aut_cdmx_gnc_f350_f450_f550_ram4000_ch3500.pdf</a></div>
+				<div class="cert"><a href="pdf/aut_multimarca_gnc_edo_mx.pdf" target="_blank" title="Ver certificación">aut_multimarca_gnc_edo_mx.pdf</a></div>
+				<div class="cert"><a href="pdf/cert_autorizaciones_equipo_gazo_5ta_gen_cdmx_edo_mex.pdf" target="_blank" title="Ver certificación">cert_autorizaciones_equipo_gazo_5ta_gen_cdmx_edo_mex.pdf</a></div>
+				<div class="cert"><a href="pdf/cert_gas_natural_df.pdf" target="_blank" title="Ver certificación">cert_gas_natural_df.pdf</a></div>
+				<div class="cert"><a href="pdf/cert_titan_gnc_cdmx_2016.pdf" target="_blank" title="Ver certificación">cert_titan_gnc_cdmx_2016.pdf</a></div>
+				<div class="cert m-bottom-20"><a href="pdf/cert_tsuru_2016.pdf" target="_blank" title="Ver certificación">cert_tsuru_2016.pdf</a></div>
 			</div>
 			
-			<p class="text-center m-bottom-20">
-				<a href="#" class="white btn-btn-primary submit">¡COTIZA TU CONVERSIÓN YA!</a>
-			</p>
+			@include('partials.modal-form-quotation')
 
 		</div>
 	</div>

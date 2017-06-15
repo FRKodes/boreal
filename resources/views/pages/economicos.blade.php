@@ -12,7 +12,7 @@
 
 	<div class="container">
 		<div class="top-icon-line text-center">
-			<span class="icon-economico"></span>
+			<span class="icon-bill"></span>
 		</div>
 		<div class="col-xs-12">
 			<p class="block-title text-center">Ventajas económicas</p>
