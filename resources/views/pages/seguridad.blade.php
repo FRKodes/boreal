@@ -40,7 +40,8 @@
 				<div class="cert"><a href="pdf/cert_autorizaciones_equipo_gazo_5ta_gen_cdmx_edo_mex.pdf" target="_blank" title="Ver certificación">cert_autorizaciones_equipo_gazo_5ta_gen_cdmx_edo_mex.pdf</a></div>
 				<div class="cert"><a href="pdf/cert_gas_natural_df.pdf" target="_blank" title="Ver certificación">cert_gas_natural_df.pdf</a></div>
 				<div class="cert"><a href="pdf/cert_titan_gnc_cdmx_2016.pdf" target="_blank" title="Ver certificación">cert_titan_gnc_cdmx_2016.pdf</a></div>
-				<div class="cert m-bottom-20"><a href="pdf/cert_tsuru_2016.pdf" target="_blank" title="Ver certificación">cert_tsuru_2016.pdf</a></div>
+				<div class="cert"><a href="pdf/cert_tsuru_2016.pdf" target="_blank" title="Ver certificación">cert_tsuru_2016.pdf</a></div>
+				<div class="cert m-bottom-20"><a href="http://www.bureauveritas.com.mx/" target="_blank"><img src="images/bureau-veritas-certification.jpeg" alt="bureau veritas certification"></a></div>
 			</div>
 			
 			@include('partials.modal-form-quotation')
