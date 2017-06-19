@@ -211,6 +211,7 @@ body
 			transition: background-color .6s ease-in
 		button
 			color: transparent
+			border: none
 .news-item
 	padding: 10px 20px
 	text-align: center
@@ -421,15 +422,17 @@ footer
 	.info
 		text-align: center
 		color: white
+	.bt-credit
+		text-align: center
 @media screen and (min-width: 325px)
 	.car-item
 		.card
-			margin-top: -150px
+			margin-top: -140px
 @media screen and (min-width: 425px)
 	.car-item
 		height: 240px
 		.card
-			margin-top: -150px
+			margin-top: -118px
 	.prices
 		._10
 			margin-left: 27%
@@ -439,12 +442,12 @@ footer
 	.car-item
 		height: 270px
 		.card
-			margin-top: -165px
+			margin-top: -120px
 @media screen and (min-width: 540px)
 	.car-item
 		height: 310px
 		.card
-			margin-top: -170px
+			margin-top: -110px
 	.prices
 		._10
 			margin-left: 29%
@@ -454,7 +457,15 @@ footer
 	.car-item
 		height: 335px
 		.card
-			margin-top: -175px
+			margin-top: -110px
+@media screen and (min-width: 620px)
+	.car-item
+		.card
+			margin-top: -150px
+@media screen and (min-width: 680px)
+	.car-item
+		.card
+			margin-top: -189px
 @media screen and (min-width: 768px)
 	body
 		padding-top: 0
@@ -569,6 +580,8 @@ footer
 		.col-sm-4
 			height: 160px
 			border-right: 1px solid rgba(white, .5)
+		.bt-credit
+			text-align: right
 	.sent_email_quotation
 		padding: 50px 100px
 		bottom: 100px

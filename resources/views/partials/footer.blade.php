@@ -50,4 +50,5 @@
 			<li><a target="_blank" href="https://www.instagram.com/borealgas/" class="icon-instagram"></a></li>
 		</ul>
 	</div>
+	<div class="col-xs-12 bt-credit"><p>Desarrollado por <a target="_blank" title="Diseño y Desarrollo Web + Digital MKT" href="http://www.blueterrier.mx">Blue Terrier</a></p></div>
 </div>
