@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title_description', 'Resuelve tus dudas sobre el Gas Natural Vehicular, éstas son algunas de las dudas más comunes.')
+
 @section('content')
 	<div class="main-banner-container faq">
 		<div class="container item">

@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title_description', 'Reduce hasta 30% de emisiones de CO2, Reduce hasta 90% de emisiones de CO, Reduce el 100% de la emisión de material particulado, No produce emisiones de Sox, No contamina el suelo, Combustión libre de olor, Nivel de ruido mucho menor')
+
 @section('content')
 	
 	<div class="main-banner-container ecologico">
@@ -28,13 +30,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 m-top-20 m-bottom-20">
-				<p>• Reduce hasta 30% de emisiones de CO2</p>
-				<p>• Reduce hasta 90% de emisiones de CO</p>
+				<p>• Reduce hasta 30% de emisiones de CO2.</p>
+				<p>• Reduce hasta 90% de emisiones de CO.</p>
 				<p>• Reduce el 100% de la emisión de material particulado.</p>
 				<p>• No produce emisiones de Sox.</p>
 				<p>• No contamina el suelo.</p>
 				<p>• Combustión libre de olor.</p>
-				<p>• Nivel de ruido mucho menor</p>
+				<p>• Nivel de ruido mucho menor.</p>
 			</div>
 			
 			@include('partials.modal-form-quotation')

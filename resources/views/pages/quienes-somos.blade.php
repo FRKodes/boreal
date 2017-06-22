@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title_description', 'Nuestros valores: Integridad, Innovación, Competitividad, Sustentabilidad')
+
 @section('content')
 	<div class="main-banner-container quienes-somos">
 		<div class="container item">

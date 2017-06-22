@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title_description', '¿Tienes alguna duda o pregunta acerca de nuestros servicios o deseas convertir tu auto a Gas Natural Vehicular? Escríbenos un mail y en breve te contactaremos.')
+
 @section('content')
 	<div class="main-banner-container contacto">
 		<div class="container item">

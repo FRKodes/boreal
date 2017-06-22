@@ -45,14 +45,14 @@ class PagesController extends Controller
 	public function sendmail()
 	{
 		Mail::send('emails.contacto-email', [], function($message){
-			$message->to('tony@blueterrier.mx', 'BOREAL Gas')->subject('Contacto desde borealgas.com');
+			$message->to('contacto@borealgas.com', 'BOREAL Gas')->subject('Contacto desde borealgas.com');
 		});
 	}
 
 	public function quotation()
 	{
 		Mail::send('emails.quotation-email', [], function($message){
-			$message->to('tony@blueterrier.mx', 'BOREAL Gas')->subject('Cotización BOREAL Gas');
+			$message->to('contacto@borealgas.com', 'BOREAL Gas')->subject('Cotización BOREAL Gas');
 		});
 	}
 

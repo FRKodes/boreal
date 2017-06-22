@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title_description', 'Ahorra más deL 50% en el consumo diario de combustible. Reduce el gasto de gasolina. Ya sea por economía o por el cuidado del medio ambiente, tenemos opciones para ti. El sistema está regulado por NOMs con revisiones anuales.')
+
 @section('content')
 	<div class="main-banner-container">
 		<div class="container item">

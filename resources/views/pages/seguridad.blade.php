@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title_description', 'El Gas Natural Vehicular con nuestro sistema Bi-Fuel de Boreal® cuenta con numerosas certificaciones expedidas por distintos organismos tanto públicos como privados, garantizando lo más importante para nosotros TU SEGURIDAD Y LA DE TU FAMILIA.')
+
 @section('content')
 	<div class="main-banner-container seguridad">
 		<div class="container item">

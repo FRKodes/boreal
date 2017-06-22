@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title_description', 'Ahorro de más del 50% en comparación con el precio por litro de la gasolina Magna, recupere su inversión a través del ahorro en el precio del combustible que utiliza en su día a día')
+
 @section('content')
 	<div class="main-banner-container economico">
 		<div class="container item">

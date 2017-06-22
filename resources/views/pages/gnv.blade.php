@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title_description', 'El gas natural vehicular es una mezcla de gases compuesta principalmente por metano. Almacenado a altas presiones (entre 200 y 250 bar), se transforma en gas natural comprimido (GNC), un combustible que se utiliza en vehículos ya que resulta económico en comparación a la gasolina..')
+
 @section('content')
 	<div class="main-banner-container gnv">
 		<div class="container item">
