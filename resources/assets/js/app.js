@@ -98,7 +98,8 @@ $(function(){
 $( document ).ready(function() {
 	console.log('Fuck!!!');
     $( window ).scroll(function() {
-      var vertical_position = $('body').scrollTop();
+      var vertical_position = $('html').scrollTop();
+      console.log(vertical_position);
       if (vertical_position >=1) {
         $('.navbar').addClass('transparent');
       }else{
